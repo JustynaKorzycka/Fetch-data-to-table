@@ -1,0 +1,16 @@
+.btn {
+  padding: 7px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .2s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.btn--delete {
+  background-color: $btn-danger;
+  color: $light-text;
+}

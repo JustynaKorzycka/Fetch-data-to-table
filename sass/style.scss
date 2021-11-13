@@ -1,0 +1,77 @@
+@import 'config';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: $primary-background-color;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+
+}
+
+.container {
+  min-height: 100vh;
+  @include centerElem;
+}
+
+.wrapper {
+  padding: 40px 10px;
+  max-width: 900px;
+
+  .table-sec {
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid $primary-accent;
+      }
+
+      th {
+        background-color: $primary-accent;
+        color: $light-text;
+        font-weight: 500;
+      }
+
+      tbody {
+        font-size: 1.2rem;
+
+        tr:nth-child(even) {
+          background-color: $sec-accent;
+        }
+
+        tr:hover {
+          background-color: $third-accent;
+
+
+        }
+      }
+
+
+    }
+
+    .filerData {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .censur {
+      background-color: yellow;
+    }
+
+  }
+}
+
+@import 'button'

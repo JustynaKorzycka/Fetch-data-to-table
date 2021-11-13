@@ -1,0 +1,13 @@
+$primary-background-color: #E1E8EB;
+$primary-accent : #548CA8;
+$sec-accent: #FFE3E3;
+$third-accent: #B5EAEA;
+$light-text: #EEEEEE;
+
+$btn-danger: #FF5151;
+
+@mixin centerElem() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
